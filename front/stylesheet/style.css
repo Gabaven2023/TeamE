@@ -1,0 +1,205 @@
+@charset "utf-8";
+
+html{
+  margin:0;
+}
+body{
+  font-family:'Hiragino Kaku Gothic Pro','Meiryo',sans-seif;
+  font-size:20px;
+  margin:0;
+}
+a{
+  text-decoration:none;
+  color:#333;
+}
+h1{
+  color:#fff;
+}
+.wide{
+  margin:0 auto;
+  background-color:#4e3737;
+}
+.wide image{
+  margin-top:10px;
+}
+.logo{
+  text-align:center;
+  margin-top:5px;
+  margin-bottom:30px;
+}
+.logo img{
+  display:inline-block;
+  margin-bottom:5px;
+}
+
+.header ul li a .icon {
+  display: inline-flex;
+  height: 15px;
+}
+.header ul li a .name {
+  display: inline-flex;
+}
+.header ul{
+  display:flex;
+}
+.header ul li{
+  width:200px;
+  min-width:200px;
+  text-align: center;
+  border:1px solid #ddd;
+  border-radius:20px;
+  background:#4e3737;
+  margin:0 auto;
+  list-style:none;
+}
+.header ul li a{
+  display:block;
+  color:#fff;
+}
+.header ul li a:hover{
+  display:block;
+  color:#d60e0e6f;
+}
+/* .shop3{
+  display:flex;
+}
+.shop3 .header_img{
+  border:10px double #333;
+  border-bottom:10px solid #79a1b1;
+  margin-right:30px;
+  margin-left:30px;
+} */
+.description h2{
+  text-align:center;
+  font-weight:bold;
+  font-size:24px;
+  margin-bottom:20px;
+}
+.description .shop{
+  display:flex;
+  justify-content:space-between;
+}
+.description .left_seat{
+  width:380px;
+  text-align:center;
+}
+.description .left_seat img{
+  margin-bottom:20px;
+  border:10px double #333;
+}
+.description .left_seat .title{
+  font-weight:bold;
+  font-size:18px;
+}
+
+.description .left_seat .seat{
+  margin-bottom:20px;
+  font-size:30px;
+  border:1px solid #333;
+}
+
+.description .left_seat .ka{
+  margin-bottom:20px;
+  font-size:30px;
+  border:1px solid #333;
+  position:relative;
+}
+.description .left_seat .ka::before{
+  position:absolute;
+  content:"";
+  top:0;
+  left:0;
+  width:50%;
+  height:100%;
+  background:rgba(0, 255, 51, 0.534);
+  z-index:-1;
+}
+
+.description .left_seat .da{
+  margin-bottom:20px;
+  font-size:30px;
+  border:1px solid #333;
+  position:relative;
+}
+.description .left_seat .da::before{
+  position:absolute;
+  content:"";
+  top:0;
+  left:0;
+  width:80%;
+  height:100%;
+  background:rgba(255, 255, 0, 0.534);
+  z-index:-1;
+}
+
+.description .left_seat .ig{
+  margin-bottom:20px;
+  font-size:30px;
+  border:1px solid #333;
+  position:relative;
+}
+.description .left_seat .ig::before{
+  position:absolute;
+  content:"";
+  top:0;
+  left:0;
+  width:90%;
+  height:100%;
+  background:rgba(255, 0, 0, 0.489);
+  z-index:-1;
+}
+
+.description .left_seat a{
+  background:#79a1b1;
+  color:#fff;
+  padding:15px 20px 12px;
+}
+.description .left_seat a:hover{
+  color:#d60e0e6f;
+}
+.footer h3{
+  margin:40px 0 0 0;
+  background: #4e3737;
+  text-align:center;
+  padding:100px 0;
+}
+.footer a{
+  color:#fff;
+}
+.footer a:hover{
+  color:#d60e0e6f;
+}
+h1{
+  font-size:25px;
+  font-weight:bold;
+  margin-bottom:20px;
+}
+.plusel {
+  text-align: center; /* テキストを中央に配置 */
+  position: relative; /* ボタンを配置するために親要素を相対的に設定 */
+}
+
+/* QRコードボタンのスタイル */
+.qrcode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:30px;
+    margin-bottom:50px;
+}
+
+.qrcode h2 {
+  width: 180px;
+  height: 100px; 
+  text-align:center;
+  background-color: #007bff71;
+  color: #fff;
+  font-weight:bold; 
+  font-size:30px;
+  border-radius: 50%; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  cursor: pointer;
+  border:dashed 10px black;
+}

@@ -1,0 +1,76 @@
+body{
+  background-image:url("../foto/background.jpg");
+}
+.content{
+  margin-top:100px;
+}
+.chart{
+  display:flex;
+  justify-content:center;
+  opacity:0.9;
+}
+.chart1,.chart2{
+  width:400;
+  height:400;
+  margin:20px 0;
+  padding:20px 60px;
+  position:relateve;
+  border:1px black solid;
+  border-radius:5%;
+}
+.chart1{
+  background-image:linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.409),
+    rgba(246, 246, 246, 0.922)
+  ), url("../foto/kaikan.jpeg");
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+.chart1:hover{
+  background-image:linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.288),
+    rgba(246, 246, 246, 0.628)
+  ), url("../foto/kaikan.jpeg");
+}
+.chart2{
+  background-image:linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.409),
+    rgba(246, 246, 246, 0.922)
+  ), url("../foto/kasasagi.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+.chart2:hover{
+  background-image:linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.288),
+    rgba(246, 246, 246, 0.628)
+  ), url("../foto/kasasagi.jpg");
+}
+.chart1 label{
+  position:absolute;
+  top:38%;
+  left:24%;
+  transform:translateX(-24%);
+  font-weight:bold;
+  font-size:40px;
+  background-color:#4e3737;
+  border:3px #e6e2e2 solid;
+  border-radius:5%;
+  color:#fff;
+}
+.chart2 label{
+  position:absolute;
+  top:38%;
+  right:24%;
+  transform:translateX(24%);
+  font-weight:bold;
+  font-size:40px;
+  background-color:#4e3737;
+  border:3px #e6e2e2 solid;
+  border-radius:5%;
+  color:#fff;
+}
