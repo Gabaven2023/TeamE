@@ -18,7 +18,10 @@ document.getElementById('button').addEventListener('click', function () {
       timerValueMinute--;
       timerValueSecond = 60;
     }
-    timerValueSecond--;
+
+    if(timerValueSecond !== 0){
+      timerValueSecond--;
+    }
 
     const displayMinute = timerValueMinute < 10 ? '0' + timerValueMinute : timerValueMinute;
     const displaySecond = timerValueSecond < 10 ? '0' + timerValueSecond : timerValueSecond;

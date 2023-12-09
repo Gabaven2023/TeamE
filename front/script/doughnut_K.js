@@ -1,7 +1,7 @@
 var ctx2 = document.getElementById('myChart2');
 
 const full2 = 200;
-var used2 = 180;
+var used2 = 120;
 var over2 = 0;
 
 if (used2 > full2) {
@@ -10,11 +10,11 @@ if (used2 > full2) {
 
 function calculateBackgroundColor2() {
   if ((used2 / full2) * 100 < 30) {
-    return 'rgb(134, 239, 113)';
+    return '#148D20';
   } else if ((used2 / full2) * 100 < 70) {
-    return 'rgb(246, 240, 72)';
+    return '#D7D720';
   } else {
-    return 'rgb(223, 0, 0)';
+    return '#D80707';
   }
 }
 
