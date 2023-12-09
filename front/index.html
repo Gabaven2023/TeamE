@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="stylesheet/style.css">
+  <link rel="stylesheet" href="stylesheet/doughnut.css">
+</head>
+<body>
+  <div class="header wide">
+    <div class="plusel">
+      <img src="foto/saga-univ_emblem.png" width="50" height="50" alt="" class="mark">
+      <h1>学食ナビ</h1>
+    </div>
+    <ul>
+      <li>
+        <a href="./">
+          <span class="icon">
+            <ion-icon name="home-outline"></ion-icon>
+          </span>
+          <span class="name">トップ</span>
+        </a>
+      </li>
+      <li>
+        <a href="menu.html">
+          <span class="icon">
+            <ion-icon name="fast-food-outline"></ion-icon>
+          </span>
+          <span class="name">メニュー</span>
+        </a>
+      </li>
+      <li>
+        <a href="coopon.html">
+          <span class="icon">
+            <ion-icon name="ticket-outline"></ion-icon>
+          </span>
+          <span class="name">クーポン</span>
+        </a>
+      </li>
+      <li>
+        <a href="explain.html">
+          <span class="icon">
+            <ion-icon name="bar-chart-outline"></ion-icon>
+          </span>
+          <span class="name">予測</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="content">
+    <div class="chart">
+      <div class="chart1">
+        <label for="myChart1">大学会館前</label>
+        <canvas id="myChart1" width="400" height="200"></canvas>
+      </div>
+      <div class="chart2">
+        <label for="myChart1">かささぎ食堂</label>
+        <canvas id="myChart2" width="400" height="200"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <h3><a href="#">top</a></h3>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="script/doughnut_D.js"></script>
+  <script src="script/doughnut_K.js"></script>
+</body>
+</html>
