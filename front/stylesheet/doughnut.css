@@ -1,73 +1,93 @@
-.content{
-  margin-top:100px;
+.content {
+  margin-top: 100px;
 }
-.chart{
-  display:flex;
-  justify-content:center;
-  opacity:0.9;
+
+.chart {
+  display: flex;
+  justify-content: center;
+  opacity: 0.9;
 }
-.chart1,.chart2{
-  width:400;
-  height:400;
-  margin:20px 10px;
-  padding:20px 60px;
-  position:relateve;
-  border:1px black solid;
-  border-radius:5%;
+
+.chart1,.chart2 {
+  width: 450px; 
+  height: 400px;
+  margin: 20px 10px;
+  padding: 20px 60px;
+  position: relative;
+  border: 1px black solid;
+  border-radius: 5%;
 }
-.chart1{
-  background-image:linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.409),
-    rgba(246, 246, 246, 0.922)
-  ), url("../foto/kaikan.jpeg");
-  background-repeat:no-repeat;
-  background-size:cover;
+
+.chart1 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.409),
+      rgba(246, 246, 246, 0.922)
+    ),
+    url("../foto/kaikan.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.chart1:hover{
-  background-image:linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.288),
-    rgba(246, 246, 246, 0.628)
-  ), url("../foto/kaikan.jpeg");
+
+.chart1:hover {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.288),
+      rgba(246, 246, 246, 0.628)
+    ),
+    url("../foto/kaikan.jpeg");
 }
-.chart2{
-  background-image:linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.409),
-    rgba(246, 246, 246, 0.922)
-  ), url("../foto/kasasagi.jpg");
-  background-repeat:no-repeat;
-  background-size:cover;
+
+.chart2 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.409),
+      rgba(246, 246, 246, 0.922)
+    ),
+    url("../foto/kasasagi.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.chart2:hover{
-  background-image:linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.288),
-    rgba(246, 246, 246, 0.628)
-  ), url("../foto/kasasagi.jpg");
+
+.chart2:hover {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.288),
+      rgba(246, 246, 246, 0.628)
+    ),
+    url("../foto/kasasagi.jpg");
 }
-.chart1 label{
-  position:absolute;
-  top:45%;
-  left:24%;
-  transform:translateX(-30%);
-  font-weight:bold;
-  font-size:40px;
-  background-color:#4e3737;
-  border:3px #e6e2e2 solid;
-  border-radius:5%;
-  color:#fff;
+
+.chart1 label {
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+  font-size: 30px;
+  background-color: #4e3737;
+  border: 3px #e6e2e2 solid;
+  border-radius: 5%;
+  color: #fff;
 }
-.chart2 label{
-  position:absolute;
-  top:45%;
-  right:22%;
-  transform:translateX(28%);
-  font-weight:bold;
-  font-size:40px;
-  background-color:#4e3737;
-  border:3px #e6e2e2 solid;
-  border-radius:5%;
-  color:#fff;
+
+.chart2 label {
+  position: absolute;
+  top: -20%;
+  right: 50%;
+  transform: translateX(50%);
+  font-weight: bold;
+  font-size: 30px;
+  background-color: #4e3737;
+  border: 3px #e6e2e2 solid;
+  border-radius: 5%;
+  color: #fff;
+}
+
+/* モバイル版 ------------------------------- */
+@media screen and (max-width: 600px) {
+  .chart1,.chart2 {
+    width: 300px; 
+    height: 200px; 
+  }
 }

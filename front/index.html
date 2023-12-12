@@ -1,47 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="stylesheet/style.css">
+  <meta name="description" content="佐賀大学学生食堂の空席状況や本日のメニューを確認するサイト">
+  <link rel="icon" type="image/ong" href="foto/logo2.png">
+  <title>学食ナビ</title>
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+  <link href="stylesheet/style.css" rel="stylesheet">
   <link rel="stylesheet" href="stylesheet/doughnut.css">
 </head>
+
 <body>
-  <div class="header wide">
-    <div class="plusel">
-      <img src="foto/saga-univ_emblem.png" width="50" height="50" alt="" class="mark">
-      <h1>学食ナビ</h1>
-    </div>
-    <ul>
-      <li>
-        <a href="../">
-          <span class="icon">
-            <ion-icon name="home-outline"></ion-icon>
-          </span>
-          <span class="name">トップ</span>
-        </a>
-      </li>
-      <li>
-        <a href="menu.html">
-          <span class="icon">
-            <ion-icon name="fast-food-outline"></ion-icon>
-          </span>
-          <span class="name">メニュー</span>
-        </a>
-      </li>
-      <li>
-        <a href="insight.html">
-          <span class="icon">
-            <ion-icon name="bar-chart-outline"></ion-icon>
-          </span>
-          <span class="name">予測</span>
-        </a>
-      </li>
-    </ul>
-  </div>
-  
+  <div id="home" class="big-bg">
+    <header class="page-header wrapper">
+      <h1><a href="index.html"><img class="logo" src="../foto/logo.png" alt="学食ナビホーム"></a></h1>
+    </header>
+    <nav>
+      <ul class="main-nav">
+        <li>
+          <a href="#">
+            <span class="icon">
+              <ion-icon name="storefront-outline"></ion-icon>
+            </span>
+            <span class="name">空き状況</span>
+          </a>
+        </li>
+        <li>
+          <a href="menu.html">
+            <span class="icon">
+              <ion-icon name="fast-food-outline"></ion-icon>
+            </span>
+            <span class="name">メニュー</span>
+          </a>
+        </li>
+        <li>
+          <a href="coopon.html">
+            <span class="icon">
+              <ion-icon name="ticket-outline"></ion-icon>
+            </span>
+            <span class="name">クーポン</span>
+          </a>
+        </li>
+        <li>
+          <a href="explain.html">
+            <span class="icon">
+              <ion-icon name="bar-chart-outline"></ion-icon>
+            </span>
+            <span class="name">予測</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="home-content wrapper">
+      <h2 class="page-title">Have A Nice Lunch♪</h2>
+      <p>学食の空席状況を確認しましょう！待ち時間がぐっと短くなります。</p>
+    </div><!-- /.home-content -->
+
   <div class="content">
     <div class="chart">
       <div class="chart1">
@@ -54,15 +70,12 @@
       </div>
     </div>
   </div>
-
-  <div class="footer">
-    <h3><a href="#">top</a></h3>
-  </div>
-
+</div><!-- /#home -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="script/doughnut_D.js"></script>
   <script src="script/doughnut_K.js"></script>
 </body>
+
 </html>
