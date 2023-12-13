@@ -2,6 +2,12 @@
 
 /* 共通部分
 ----------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 html {
     font-size: 100%;
 }
@@ -101,10 +107,7 @@ li:nth-child(4):before{
     background-position: center top;
     background-repeat: no-repeat;
 }
-#home {
-    background-image: url("../foto/佐大の学食.jpg");
-    min-height: 100vh;
-}
+
 #home .page-title {
     text-transform: none;
 }
