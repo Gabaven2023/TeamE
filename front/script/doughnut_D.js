@@ -1,7 +1,7 @@
 var ctx1 = document.getElementById('myChart1');
 
 const full1 = 300;
-var used1 = 250;
+var used1 = 200;
 var over1 = 0;
 
 if (used1 > full1) {
