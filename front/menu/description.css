@@ -10,13 +10,9 @@ ul{
   font-size: 16;
 }
 
-span.price{
- text-align: right;
+span{
+  float: right;
 }
-
-
-
-
 
 
 
