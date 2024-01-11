@@ -1,33 +1,16 @@
-body {
-  background-color: #eae8b3;
-  margin: 0 50px;
+ul{
+  list-style:none;
+  margin-top:50px;
+  padding:0;
 }
-
-.content {
+ul :nth-child(even){
+  background-color:bisque;
+}
+.content{
   background-color: #fff;
-  margin: auto 10vw;
-  padding: 0 0 50px 0;
+  border-radius:15px;
 }
-
-.discription {
-  margin: 0;
-}
-
-ul {
-  padding-bottom: 50px;
-  padding-left: 0;
-  padding: none;
-}
-
-li {
-  list-style: none;
-  display:flex;
-}
-
-li:nth-child(even) {
-  background-color: rgb(239, 223, 174);
-}
-
-li span.price {
-  margin-left:auto;
+body{
+  background-color: yellow;
+  margin:0 50px;
 }
