@@ -17,10 +17,6 @@ ul {
   font-size: 20px;
   position:abusolute;
 }
-header{
-  display:flex;
-  justify-content:start;
-}
 a img{
   width: 200px;
 }
