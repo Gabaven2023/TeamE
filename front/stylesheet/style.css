@@ -1,49 +1,66 @@
 @charset "UTF-8";
 
-/* 共通部分
------------------------------ */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 html {
-    font-size: 100%;
+  font-size: 100%;
 }
+
 body {
-    font-family:"Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
-    line-height: 1.7;
-         color: #432;
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+  line-height: 1.7;
+  color: #432;
 }
+
 a {
-    text-decoration: none;
-}
-img {
-    max-width: 100%;
+  text-decoration: none;
 }
 
-/* HEADER
------------------------------ */
+a.img {
+  width: 100%;
+}
+.logo-container {
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content:start;
+}
+
 .logo {
-    width: 210px;
-    margin-top: 14px;
+  margin-right: 10px;
+  width: 180px;
+  margin-top: 14px;
 }
 
-.main-nav{
-    display: flex;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    list-style: none;
-    justify-content:center;
-  }
-.main-nav li{
-    padding:15px;
-    width:100vw;
-    text-align:center;
-    background-color: #464545;
-    position:relative;
+.page-header {
+  display: flex;
+  justify-content:start;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0 4%;
+  background-color: #eae8b3;
 }
+
+.main-nav {
+  display: flex;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  list-style: none;
+  justify-content: center;
+}
+
+.main-nav li {
+  padding: 15px;
+  width: 100vw;
+  text-align: center;
+  background-color: #464545;
+  position: relative;
+}
+
 li:before {
   content: '';
   position: absolute;
@@ -52,88 +69,79 @@ li:before {
   display: inline-block;
   width: 3px;
   height: 30px;
-  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   background-color: #8d8d8d;
   border-radius: 2px;
 }
-li:nth-child(4):before{
-  display:none;
+
+li:nth-child(4):before {
+  display: none;
 }
-.main-nav a{
-    color: #ffffff7b;
+
+.main-nav a {
+  color: #ffffff7b;
 }
-.main-nav a:hover{
+
+.main-nav a:hover {
   color: #fff;
 }
 
-.page-header{
-    display: flex;
-    justify-content: space-between;
-}
-
-.page-header{
-    max-width: 100vw;
-    margin:0;
-    padding: 0 4%;
-    background-color:#eae8b3;
-}
-.icon{
+.icon {
   display: inline-flex;
   height: 1.1rem;
 }
 
-/* HOME
--------------------------*/
 .home-content {
-    text-align: center;
+  text-align: center;
+  margin-top: 5vh;
 }
+
 .home-content p {
-    font-size: 1.125rem;
-    margin: 10px 0 42px;
+  font-size: 1.125rem;
+  margin: 10px 0 42px;
 }
 
-/* 見出し */
 .page-title {
-    font-size: 5rem;
-    font-family: 'Philosopher', serif;
-    text-transform: uppercase;
-    font-weight: normal;
+  font-size: 5rem;
+  font-family: 'Philosopher', serif;
+  text-transform: uppercase;
+  font-weight: normal;
 }
 
-/* 大きな背景画像 */
 .big-bg {
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
 }
 
 #home .page-title {
-    text-transform: none;
+  text-transform: none;
 }
 
-/* モバイル版
-------------------------------- */
-@media(max-width: 600px) {
-    .page-title {
-        font-size: 2.5rem;
-    }
-    .page-header {
-        flex-direction: column;
-        align-items: center;
-    }
+@media (max-width: 600px) {
+  h1 {
+    margin-top: 10vh;
+  }
 
-    /* HEADER */
-    .main-nav {
-        font-size: 1rem;
-        margin-top: 10px;
-    }
-    .main-nav li {
-        margin: 0 20px;
-    }
+  .page-title {
+    font-size: 2.5rem;
+  }
 
-    /* HOME */
-    .home-content {
-        margin-top: 20%;
-    }
+  .page-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-nav {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+  .main-nav li {
+    margin: 0 20px;
+  }
+
+  .home-content {
+    margin-top: 20%;
+  }
 }

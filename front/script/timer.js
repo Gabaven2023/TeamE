@@ -1,7 +1,7 @@
 let time;// タイマーが格納される変数
 
-let timerValueSecond = 10;// タイマーの初期値（秒数）
-let timerValueMinute = 0;
+let timerValueSecond = 0;// タイマーの初期値（秒数）
+let timerValueMinute = 60;
 
 // ボタンクリック時の処理
 document.getElementById('button').addEventListener('click', function () {

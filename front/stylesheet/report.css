@@ -106,10 +106,11 @@ img{
 }
 #timer{
   width:500px;
-  height:500px;
+  height:480px;
   background-color: #fff;
   display:none;
   z-index:1;
+  align-items: center;
   justify-content:center;
   margin:0 auto;
   position:absolute;
@@ -132,8 +133,20 @@ img{
 .timerDisplay{
   width:500px;
   position:absolute;
-  top:80%;
+  top:75%;
   text-align:center;
   font-size:30px;
   font-weight:bold;
+}
+button.back{
+  width:500px;
+  position:absolute;
+  top:75%;
+  text-align:center;
+  font-size:30px;
+  font-weight:bold;
+  background-color:#e5f491;
+}
+button.back:hover{
+  background-color:#e5f4917d;
 }
