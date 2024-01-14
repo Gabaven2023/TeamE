@@ -55,13 +55,13 @@ a.img {
 
 .main-nav li {
   padding: 15px;
-  width: 100vw;
+  width: 100%;
   text-align: center;
   background-color: #464545;
   position: relative;
 }
 
-li:before {
+.main-nav li:before {
   content: '';
   position: absolute;
   left: 100%;
@@ -116,6 +116,51 @@ li:nth-child(4):before {
 
 #home .page-title {
   text-transform: none;
+}
+
+.accordionRe {
+  position: relative;
+}
+
+.submenu {
+  display: none;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+
+.accordionRe.active .submenu {
+  display: block;
+}
+
+.submenu li {
+  background-color: #464545;
+  text-align: center;
+}
+
+.submenu li:before{
+  display:none;
+}
+
+.submenu li:nth-child(1){
+  border-top:solid 1px #8d8d8d;
+  border-bottom:solid 1px #8d8d8d;
+}
+.submenu a {
+  color: #ffffff7b;
+  display: block;
+  padding: 0 15px;
+  text-decoration: none;
+}
+
+.submenu a:hover {
+  color: #fff;
 }
 
 @media (max-width: 600px) {
