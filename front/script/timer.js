@@ -4,7 +4,7 @@ let timerValueSecond = 0;// タイマーの初期値（秒数）
 let timerValueMinute = 60;
 
 // ボタンクリック時の処理
-document.getElementById('button').addEventListener('click', function () {
+document.getElementById('buttonI').addEventListener('click', function () {
   // タイマーが既に実行中の場合は停止
   if (time) {
     clearInterval(time);
