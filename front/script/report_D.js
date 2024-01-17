@@ -4,6 +4,10 @@ var buttonDe = document.getElementById('buttonE');
 var contentD = document.getElementById('content');
 var hiddencontentD = document.getElementById('hiddencontent');
 var timerD = document.getElementById('timer');
+var doorOL = document.querySelector('.doorOL');
+var doorOR = document.querySelector('.doorOR');
+var doorEL = document.querySelector('.doorEL');
+var doorER = document.querySelector('.doorER');
 
 function getRandomStringD(length) {
   const charsD = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -32,9 +36,51 @@ buttonD.addEventListener('click', () => {
   timerD.style.display = 'block';
   localStorage.setItem('myDKey', used1);
 })
+doorOL.addEventListener('click', () => {
+  var createK = new QRCode(qrcode, {
+    text: "${code}",
+    width: 200,
+    height: 200,
+    colorDark: "#000",
+    colorLight: "#fff",
+    correctLevel: QRCode.CorrectLevel.H
+  })
+  used1++;
+  hiddencontentD.style.display = 'block';
+  timerK.style.display = 'block';
+  localStorage.setItem('myDKey', used1);
+})
 
+doorOR.addEventListener('click', () => {
+  var createK = new QRCode(qrcode, {
+    text: "${code}",
+    width: 200,
+    height: 200,
+    colorDark: "#000",
+    colorLight: "#fff",
+    correctLevel: QRCode.CorrectLevel.H
+  })
+  used1++;
+  hiddencontentD.style.display = 'block';
+  timerK.style.display = 'block';
+  localStorage.setItem('myDKey', used1);
+})
+
+buttonDe.addEventListener('click', () => {
+  used2--;
+  localStorage.setItem('myDKey', used1);
+})
+
+doorEL.addEventListener('click', () => {
+  used1--;
+  localStorage.setItem('myDKey', used1);
+})
+
+doorOL.addEventListener('click', () => {
+  used1--;
+  localStorage.setItem('myDKey', used1);
+})
 buttonDe.addEventListener('click', () => {
   used1--;
   localStorage.setItem('myDKey', used1);
-  location.href="../index.html";
 })
