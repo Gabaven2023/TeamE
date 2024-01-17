@@ -89,7 +89,8 @@ var myChart1 = new Chart(ctx1, {
         position: 'bottom',
         align: 'center',
         font:{
-          size:40,
+          size:'40px',
+          color:'#000',
           weight:'bold',
         },
       },

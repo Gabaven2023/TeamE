@@ -1,5 +1,6 @@
 body {
-  background-color:#ffe4c5;
+  background-image:url("../foto/backR2.jpeg");
+  background-size:cover;
   position:relative;
   z-index:-1;
   margin:0;
@@ -122,9 +123,12 @@ button.back{
   font-size:30px;
   font-weight:bold;
   background-color:#e5f491;
+  border-radius:15px;
+  transition: all 0.8s;
 }
 button.back:hover{
-  background-color:#e5f4917d;
+  background-color:#ffff03;
+  transform: scale(0.8, 0.8);
 }
 
 
