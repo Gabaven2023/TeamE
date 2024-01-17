@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="佐賀大学学生食堂の空席状況や本日のメニューを確認するサイト">
-  <link rel="icon" type="image/ong" href="foto/logo2.png">
+  <link rel="icon" type="image/ong" href="foto/logo.png">
   <title>学食ナビ</title>
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
@@ -12,16 +12,18 @@
   <link rel="stylesheet" href="stylesheet/doughnut.css">
   <style>
     #home {
-    background-image: url("foto/佐大の学食.jpg");
-    min-height: 100vw;
-}
+      background-image: url("foto/佐大の学食.jpg");
+      min-height: 100vw;
+    }
   </style>
 </head>
 
 <body>
   <div id="home" class="big-bg">
     <header class="page-header wrapper">
-      <h1><a href="index.html"><img class="logo" src="foto/logo.png" alt="学食ナビホーム"></a></h1>
+      <a href="index.html" class="logo-container">
+        <img class="logo" src="foto/logo2.png" alt="学食ナビホーム">
+      </a>
     </header>
     <nav>
       <ul class="main-nav">
@@ -41,16 +43,19 @@
             <span class="name">メニュー</span>
           </a>
         </li>
-        <li>
-          <a href="report.html">
+        <li class="accordionRe">
+          <a href="#">
             <span class="icon">
-              <ion-icon name="ticket-outline"></ion-icon>
+              <ion-icon name="footsteps-outline"></ion-icon>
             </span>
-            <span class="name">クーポン</span>
+            <span class="name">入退店ボタン</span>
           </a>
+          <ul class="submenu">
+            <li><a href="report_D.html">大学会館前</a></li>
+            <li><a href="report_K.html">かささぎ食堂</a></li>
+          </ul>
         </li>
-        <li>
-          <a href="explain.html">
+        <li> <a href="insight.html">
             <span class="icon">
               <ion-icon name="bar-chart-outline"></ion-icon>
             </span>
@@ -64,24 +69,25 @@
       <p>学食の空席状況を確認しましょう！待ち時間がぐっと短くなります。</p>
     </div><!-- /.home-content -->
 
-  <div class="content">
-    <div class="chart">
-      <div class="chart1">
-        <label for="myChart1">大学会館前</label>
-        <canvas id="myChart1" width="400" height="200"></canvas>
-      </div>
-      <div class="chart2">
-        <label for="myChart1">かささぎ食堂</label>
-        <canvas id="myChart2" width="400" height="200"></canvas>
+    <div class="content">
+      <div class="chart">
+        <div class="chart1">
+          <label for="myChart1">大学会館前</label>
+          <canvas id="myChart1" width="400" height="200"></canvas>
+        </div>
+        <div class="chart2">
+          <label for="myChart2">かささぎ食堂</label>
+          <canvas id="myChart2" width="400" height="200"></canvas>
+        </div>
       </div>
     </div>
-  </div>
-</div><!-- /#home -->
+  </div><!-- /#home -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="script/doughnut_D.js"></script>
   <script src="script/doughnut_K.js"></script>
+  <script src="script/accordion.js"></script>
 </body>
 
 </html>

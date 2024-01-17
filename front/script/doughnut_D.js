@@ -1,8 +1,10 @@
 var ctx1 = document.getElementById('myChart1');
 
 const full1 = 300;
-var used1 = 200;
+var used1 = 0;
 var over1 = 0;
+
+var used1 = localStorage.getItem('myDKey');
 
 if (used1 > full1) {
   over1 = used1 - full1;
