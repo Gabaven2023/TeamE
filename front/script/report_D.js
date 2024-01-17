@@ -47,7 +47,7 @@ doorOL.addEventListener('click', () => {
   })
   used1++;
   hiddencontentD.style.display = 'block';
-  timerK.style.display = 'block';
+  timerD.style.display = 'block';
   localStorage.setItem('myDKey', used1);
 })
 
@@ -62,7 +62,7 @@ doorOR.addEventListener('click', () => {
   })
   used1++;
   hiddencontentD.style.display = 'block';
-  timerK.style.display = 'block';
+  timerD.style.display = 'block';
   localStorage.setItem('myDKey', used1);
 })
 

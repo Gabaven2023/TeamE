@@ -96,6 +96,7 @@ a {
   transform:translateX(31%);
   border:5px #fff solid;
   border-radius:15px;
+  position:fixed;
 }
 .attitute{
   width:500px;
