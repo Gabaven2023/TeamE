@@ -1,8 +1,10 @@
 var ctx2 = document.getElementById('myChart2');
 
 const full2 = 200;
-var used2 = 120;
+var used2 = 0;
 var over2 = 0;
+
+var used2 = localStorage.getItem('myKKey');
 
 if (used2 > full2) {
   over2 = used2 - full2;
@@ -86,6 +88,11 @@ var myChart2 = new Chart(ctx2, {
         text: `${over2}人待ち`,
         position: 'bottom',
         align: 'center',
+        font:{
+          size:40,
+          color:'#000',
+          weight:'bold',
+        },
       },
       counter: {
         fontColor: 'red',

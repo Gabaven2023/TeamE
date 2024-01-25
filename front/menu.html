@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="佐賀大学学生食堂の空席状況や本日のメニューを確認するサイト">
-  <link rel="icon" type="image/ong" href="foto/logo2.png">
+  <link rel="icon" type="image/ong" href="foto/logo.png">
   <title>menu</title>
   <link rel="stylesheet" href="stylesheet/menu.css">
   <link rel="stylesheet" href="stylesheet/style.css">
@@ -19,7 +19,9 @@
 <body>
   <div id="home" class="big-bg">
     <header class="page-header wrapper">
-      <h1><a href="index.html"><img class="logo" src="../foto/logo.png" alt="学食ナビホーム"></a></h1>
+      <a href="index.html" class="logo-container">
+        <img class="logo" src="foto/logo2.png" alt="学食ナビホーム">
+      </a>
     </header>
     <nav>
       <ul class="main-nav">
@@ -39,16 +41,20 @@
             <span class="name">メニュー</span>
           </a>
         </li>
-        <li>
-          <a href="report.html">
+        <li class="accordionRe">
+          <a href="#">
             <span class="icon">
-              <ion-icon name="ticket-outline"></ion-icon>
+              <ion-icon name="footsteps-outline"></ion-icon>
             </span>
-            <span class="name">クーポン</span>
+            <span class="name">入退店ボタン</span>
           </a>
+          <ul class="submenu">
+            <li><a href="report_D.html">学生会館食堂</a></li>
+            <li><a href="report_K.html">かささぎ食堂</a></li>
+          </ul>
         </li>
         <li>
-          <a href="explain.html">
+          <a href="insight.html">
             <span class="icon">
               <ion-icon name="bar-chart-outline"></ion-icon>
             </span>
@@ -73,8 +79,8 @@
           <div class="accordion-item-body-content">
             <div class="card-group">
               <div class="card">
-                <a href="">
-                  <img src="https://west2-univ.jp/menu_img/png_sp/814040.png" alt>
+                <a href="menu/menu1-1.html">
+                  <img src="https://west2-univ.jp/menu_img/png_sp/814116.png" alt>
                   <div class="card__textbox">
                     <div class="card__titletext">
                       "鶏の生姜あんかけ"
@@ -87,8 +93,8 @@
                 </a>
               </div>
               <div class="card">
-                <a href="">
-                  <img src="https://west2-univ.jp/menu_img/png_sp/814040.png" alt>
+                <a href="menu/menu1-2.html">
+                  <img src="https://west2-univ.jp/menu_img/png_sp/814119.png" alt>
                   <div class="card__textbox">
                     <div class="card__titletext">
                       "シチュード豆腐バーグ"
@@ -101,7 +107,7 @@
                 </a>
               </div>
               <div class="card">
-                <a href="">
+                <a href="menu/menu1-3.html">
                   <img src="https://west2-univ.jp/menu_img/png_sp/903047.png" alt>
                   <div class="card__textbox">
                     <div class="card__titletext">
@@ -115,8 +121,8 @@
                 </a>
               </div>
               <div class="card">
-                <a href="">
-                  <img src="https://west2-univ.jp/menu_img/png_sp/814025.png" alt>
+                <a href="menu/menu1-4.html">
+                  <img src="https://west2-univ.jp/menu_img/png_sp/814274.png" alt>
                   <div class="card__textbox">
                     <div class="card__titletext">
                       "かつおカツ甘醤油だれ"
@@ -138,277 +144,391 @@
         </div>
         <div class="accordion-item-body">
           <div class="accordion-item-body-content">
-            <!-- 副菜のメニューに対応させて上のimg src="url"部分とcard_textboxの中の詳細を変更 -->
             <div class="card-group">
               <div class="card">
-                <a href="">
-                  <img src="https://west2-univ.jp/menu_img/png_sp/814116.png" alt>
+                <a href="menu/menu2-1.html">
+                  <img src="https://west2-univ.jp/menu_img/png_sp/814418.png" alt>
                   <div class="card__textbox">
                     <div class="card__titletext">
-                      "オレンジチキン"
+                      "ポテト野菜サラダ"
                     </div>
                     <div class="card__overviewtext">
-                      <span>Fried chicken with orange sauce</span><br>
-                      <span class="price">¥363</span>
+                      <span>Cabbage and potato salad</span><br>
+                      <span class="price">¥121</span>
                     </div>
                   </div>
                 </a>
               </div>
               <div class="card">
-                <a href="">
-                  <img src="https://west2-univ.jp/menu_img/png_sp/814119.png" alt>
+                <a href="menu/menu2-2.html">
+                  <img src="https://west2-univ.jp/menu_img/png_sp/814591.png" alt>
                   <div class="card__textbox">
                     <div class="card__titletext">
-                      "ハンバーグトリュフ香るソース"
+                      "人参明太マヨ和え"
                     </div>
                     <div class="card__overviewtext">
-                      <span>Hamburg steak with truffle flavored sauce</span><br>
-                      <span class="price">¥319</span>
+                      <span>Carrot mixed with alaska pollack flavored mayonnaise</span><br>
+                      <span class="price">¥99</span>
                     </div>
                   </div>
                 </a>
               </div>
               <div class="card">
-                <a href="">
-                  <img src="https://west2-univ.jp/menu_img/png_sp/903047.png" alt>
+                <a href="menu/menu2-3.html">
+                  <img src="https://west2-univ.jp/menu_img/png_sp/814590.png" alt>
                   <div class="card__textbox">
                     <div class="card__titletext">
-                      "チキンカツのピリッと柚子胡椒マヨ"
+                      "ほうれん草と蒸し鶏のピーナッツ和え"
                     </div>
                     <div class="card__overviewtext">
-                      <span>Chicken cutlet with mayonnaise containing yuzu juice</span><br>
-                      <span class="price">¥275</span>
+                      <span>Steamed chiken and boiled spinach with peanut paste</span><br>
+                      <span class="price">¥99</span>
                     </div>
                   </div>
                 </a>
               </div>
               <div class="card">
-                <a href="">
-                  <img src="https://west2-univ.jp/menu_img/png_sp/814274.png" alt>
+                <a href="menu/menu2-4.html">
+                  <img src="https://west2-univ.jp/menu_img/png_sp/814498.png" alt>
                   <div class="card__textbox">
                     <div class="card__titletext">
-                      "ポークミンチカツ"
+                      "じゃガリバタ"
                     </div>
                     <div class="card__overviewtext">
-                      <span>Fried minced meat cutlet</span><br>
-                      <span class="price">¥275</span>
+                      <span>Grilled potato with garlic butter soysauce</span><br>
+                      <span class="price">¥99</span>
                     </div>
                   </div>
                 </a>
+              </div>
+              <div class="card">
+                <a href="menu/menu2-5.html">
+                  <img src="https://west2-univ.jp/menu_img/png_sp/814554.png" alt>
+                  <div class="card__textbox">
+                    <div class="card__titletext">
+                      "茄子のピリ辛胡麻風味"
+                    </div>
+                    <div class="card__overviewtext">
+                      <span>Simmered eggplant in japanese sesame soup</span><br>
+                      <span class="price">¥99
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a href="menu/menu2-6.html">
+                  <img src="https://west2-univ.jp/menu_img/png_sp/814552.png" alt>
+                  <div class="card__textbox">
+                    <div class="card__titletext">
+                      "きんぴらごぼう"
+                    </div>
+                    <div class="card__overviewtext">
+                      <span>Fried burdock in soy sauce and sugar</span><br>
+                      <span class="price">¥77</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a href="menu/menu2-7.html">
+                  <img src="https://west2-univ.jp/menu_img/png_sp/814460.png" alt>
+                  <div class="card__textbox">
+                    <div class="card__titletext">
+                      "ミニサラダ"
+                    </div>
+                    <div class="card__overviewtext">
+                      <span>Cabbage and potherb mustard salad</span><br>
+                      <span class="price">¥55</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a href="menu/menu2-8.html">
+                  <img src="https://west2-univ.jp/menu_img/png_sp/824455.png" alt>
+                  <div class="card__textbox">
+                    <div class="card__titletext">
+                      "冷奴"
+                    </div>
+                    <div class="card__overviewtext">
+                      <span>Tofu with ginger leek</span><br>
+                      <span class="price">¥55</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a href="menu/menu2-9.html">
+                  <img src="https://west2-univ.jp/menu_img/png_sp/814420.png" alt>
+                  <div class="card__textbox">
+                    <div class="card__titletext">
+                      "南瓜サラダ"
+                    </div>
+                    <div class="card__overviewtext">
+                      <span>Pumpkin salad with mayonnaise based sauce</span><br>
+                      <span class="price">¥77</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a href="menu/menu2-10.html">
+                  <img src="https://west2-univ.jp/menu_img/png_sp/814666.png" alt>
+                  <div class="card__textbox">
+                    <div class="card__titletext">
+                      "味噌汁"
+                    </div>
+                    <div class="card__overviewtext">
+                      <span>Miso soup</span><br>
+                      <span class="price">¥44</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a href="menu/menu2-11.html">
+                  <img src="https://west2-univ.jp/menu_img/png_sp/814593.png" alt>
+                  <div class="card__textbox">
+                    <div class="card__titletext">
+                      "胡麻豚汁"
+                    </div>
+                    <div class="card__overviewtext">
+                      <span>Japanese soup with pork vegetables and sesame</span><br>
+                      <span class="price">¥121</span>
+                    </div>
+                  </div>
+                </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="accordion-item">
-        <div class="accordion-item-header">
-          麺類 Noodls
-        </div>
-        <div class="accordion-item-body">
-          <div class="accordion-item-body-content">
-            <!-- 麺類のメニューに対応させて上のimg src="url"部分とcard_textboxの中の詳細を変更 -->
-            <div class="card-group">
-              <div class="card">
-                <a href="">
-                  <img src="https://west2-univ.jp/menu_img/png_sp/814116.png" alt>
-                  <div class="card__textbox">
-                    <div class="card__titletext">
-                      "オレンジチキン"
+        <div class="accordion-item">
+          <div class="accordion-item-header">
+            麺類 Noodls
+          </div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              <!-- 麺類のメニューに対応させて上のimg src="url"部分とcard_textboxの中の詳細を変更 -->
+              <div class="card-group">
+                <div class="card">
+                  <a href="menu/menu3-1.html">
+                    <img src="https://west2-univ.jp/menu_img/png_sp/819409.png" alt>
+                    <div class="card__textbox">
+                      <div class="card__titletext">
+                        "塩ちゃんこうどん（柚子胡椒）"
+                      </div>
+                      <div class="card__overviewtext">
+                        <span>Hot whitewheat nondles with steamed chicken and vegetables in citron pepper based
+                          soup</span><br>
+                        <span class="price">¥407</span>
+                      </div>
                     </div>
-                    <div class="card__overviewtext">
-                      <span>Fried chicken with orange sauce</span><br>
-                      <span class="price">¥363</span>
+                  </a>
+                </div>
+                <div class="card">
+                  <a href="menu/menu3-2.html">
+                    <img src="https://west2-univ.jp/menu_img/png_sp/989328.png" alt>
+                    <div class="card__textbox">
+                      <div class="card__titletext">
+                        "かけうどん（かまぼこ付き）期間限定"
+                      </div>
+                      <div class="card__overviewtext">
+                        <span>Hot whitewheat noodles in japanese soup</span><br>
+                        <span class="price">¥231</span>
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </div>
-              <div class="card">
-                <a href="">
-                  <img src="https://west2-univ.jp/menu_img/png_sp/814119.png" alt>
-                  <div class="card__textbox">
-                    <div class="card__titletext">
-                      "ハンバーグトリュフ香るソース"
+                  </a>
+                </div>
+                <div class="card">
+                  <a href="menu/menu3-3.html">
+                    <img src="https://west2-univ.jp/menu_img/png_sp/985323.png" alt>
+                    <div class="card__textbox">
+                      <div class="card__titletext">
+                        "肉うどん"
+                      </div>
+                      <div class="card__overviewtext">
+                        <span>Hot whitewheat noodles with beef in japanese soup</span><br>
+                        <span class="price">¥363</span>
+                      </div>
                     </div>
-                    <div class="card__overviewtext">
-                      <span>Hamburg steak with truffle flavored sauce</span><br>
-                      <span class="price">¥319</span>
+                  </a>
+                </div>
+                <div class="card">
+                  <a href="menu/menu3-4.html">
+                    <img src="https://west2-univ.jp/menu_img/png_sp/819348.png" alt>
+                    <div class="card__textbox">
+                      <div class="card__titletext">
+                        "味噌ラーメン"
+                      </div>
+                      <div class="card__overviewtext">
+                        <span>Hot Chinese noodles with roasted pork and bean sprout in soy Miso based soup</span><br>
+                        <span class="price">¥385</span>
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </div>
-              <div class="card">
-                <a href="">
-                  <img src="https://west2-univ.jp/menu_img/png_sp/903047.png" alt>
-                  <div class="card__textbox">
-                    <div class="card__titletext">
-                      "チキンカツのピリッと柚子胡椒マヨ"
-                    </div>
-                    <div class="card__overviewtext">
-                      <span>Chicken cutlet with mayonnaise containing yuzu juice</span><br>
-                      <span class="price">¥275</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="card">
-                <a href="">
-                  <img src="https://west2-univ.jp/menu_img/png_sp/814274.png" alt>
-                  <div class="card__textbox">
-                    <div class="card__titletext">
-                      "ポークミンチカツ"
-                    </div>
-                    <div class="card__overviewtext">
-                      <span>Fried minced meat cutlet</span><br>
-                      <span class="price">¥275</span>
-                    </div>
-                  </div>
-                </a>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="accordion-item">
-        <div class="accordion-item-header">
-          丼・カレー Rice bowl/Curry
-        </div>
-        <div class="accordion-item-body">
-          <div class="accordion-item-body-content">
-            <!-- 丼・カレーに対応させて上のimg src="url"部分とcard_textboxの中の詳細を変更 -->
-            <div class="card-group">
-              <div class="card">
-                <a href="">
-                  <img src="https://west2-univ.jp/menu_img/png_sp/814116.png" alt>
-                  <div class="card__textbox">
-                    <div class="card__titletext">
-                      "オレンジチキン"
+        <div class="accordion-item">
+          <div class="accordion-item-header">
+            丼・カレー Rice bowl/Curry
+          </div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              <!-- 丼・カレーに対応させて上のimg src="url"部分とcard_textboxの中の詳細を変更 -->
+              <div class="card-group">
+                <div class="card">
+                  <a href="menu/menu4-1.html">
+                    <img src="https://west2-univ.jp/menu_img/png_sp/819147.png" alt>
+                    <div class="card__textbox">
+                      <div class="card__titletext">
+                        "野菜たっぷり中華カツ丼"
+                      </div>
+                      <div class="card__overviewtext">
+                        <span>Bowl of rice with fried pork cutlet vegetables in Chinese soup</span><br>
+                        <span class="price">¥473</span>
+                      </div>
                     </div>
-                    <div class="card__overviewtext">
-                      <span>Fried chicken with orange sauce</span><br>
-                      <span class="price">¥363</span>
+                  </a>
+                </div>
+                <div class="card">
+                  <a href="menu/menu4-2.html">
+                    <img src="https://west2-univ.jp/menu_img/png_sp/819238.png" alt>
+                    <div class="card__textbox">
+                      <div class="card__titletext">
+                        "たっぷりチーズカレー"
+                      </div>
+                      <div class="card__overviewtext">
+                        <span>Curry rice with cheese</span><br>
+                        <span class="price">¥418</span>
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </div>
-              <div class="card">
-                <a href="">
-                  <img src="https://west2-univ.jp/menu_img/png_sp/814119.png" alt>
-                  <div class="card__textbox">
-                    <div class="card__titletext">
-                      "ハンバーグトリュフ香るソース"
+                  </a>
+                </div>
+                <div class="card">
+                  <a href="menu/menu4-3.html">
+                    <img src="https://west2-univ.jp/menu_img/png_sp/819272.png" alt>
+                    <div class="card__textbox">
+                      <div class="card__titletext">
+                        "カレーライス"
+                      </div>
+                      <div class="card__overviewtext">
+                        <span>Curry rice</span><br>
+                        <span class="price">¥319</span>
+                      </div>
                     </div>
-                    <div class="card__overviewtext">
-                      <span>Hamburg steak with truffle flavored sauce</span><br>
-                      <span class="price">¥319</span>
+                  </a>
+                </div>
+                <div class="card">
+                  <a href="menu/menu4-4.html">
+                    <img src="https://west2-univ.jp/menu_img/png_sp/814702.png" alt>
+                    <div class="card__textbox">
+                      <div class="card__titletext">
+                        "ライス"
+                      </div>
+                      <div class="card__overviewtext">
+                        <span>Boiled rice</span><br>
+                        <span class="price">¥115</span>
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </div>
-              <div class="card">
-                <a href="">
-                  <img src="https://west2-univ.jp/menu_img/png_sp/903047.png" alt>
-                  <div class="card__textbox">
-                    <div class="card__titletext">
-                      "チキンカツのピリッと柚子胡椒マヨ"
-                    </div>
-                    <div class="card__overviewtext">
-                      <span>Chicken cutlet with mayonnaise containing yuzu juice</span><br>
-                      <span class="price">¥275</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="card">
-                <a href="">
-                  <img src="https://west2-univ.jp/menu_img/png_sp/814274.png" alt>
-                  <div class="card__textbox">
-                    <div class="card__titletext">
-                      "ポークミンチカツ"
-                    </div>
-                    <div class="card__overviewtext">
-                      <span>Fried minced meat cutlet</span><br>
-                      <span class="price">¥275</span>
-                    </div>
-                  </div>
-                </a>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="accordion-item">
-        <div class="accordion-item-header">
-          デザート Dessert
-        </div>
-        <div class="accordion-item-body">
-          <div class="accordion-item-body-content">
-            <!-- デザートに対応させて上のimg src="url"部分とcard_textboxの中の詳細を変更 -->
-            <div class="card-group">
-              <div class="card">
-                <a href="">
-                  <img src="https://west2-univ.jp/menu_img/png_sp/814116.png" alt>
-                  <div class="card__textbox">
-                    <div class="card__titletext">
-                      "オレンジチキン"
+        <div class="accordion-item">
+          <div class="accordion-item-header">
+            デザート Dessert
+          </div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              <!-- デザートに対応させて上のimg src="url"部分とcard_textboxの中の詳細を変更 -->
+              <div class="card-group">
+                <div class="card">
+                  <a href="menu/menu5-1.html">
+                    <img src="https://west2-univ.jp/menu_img/png_sp/814841.png" alt>
+                    <div class="card__textbox">
+                      <div class="card__titletext">
+                        "ミルクティーショート"
+                      </div>
+                      <div class="card__overviewtext">
+                        <span>Sponge cake with milk tea flavor</span><br>
+                        <span class="price">¥165</span>
+                      </div>
                     </div>
-                    <div class="card__overviewtext">
-                      <span>Fried chicken with orange sauce</span><br>
-                      <span class="price">¥363</span>
+                  </a>
+                </div>
+                <div class="card">
+                  <a href="menu/menu5-2.html">
+                    <img src="https://west2-univ.jp/menu_img/png_sp/814808.png" alt>
+                    <div class="card__textbox">
+                      <div class="card__titletext">
+                        "フルーツヨーグルト"
+                      </div>
+                      <div class="card__overviewtext">
+                        <span>Yogurt with peach pineapple orange</span><br>
+                        <span class="price">¥121</span>
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </div>
-              <div class="card">
-                <a href="">
-                  <img src="https://west2-univ.jp/menu_img/png_sp/814119.png" alt>
-                  <div class="card__textbox">
-                    <div class="card__titletext">
-                      "ハンバーグトリュフ香るソース"
+                  </a>
+                </div>
+                <div class="card">
+                  <a href="menu/menu5-3.html">
+                    <img src="https://west2-univ.jp/menu_img/png_sp/814835.png" alt>
+                    <div class="card__textbox">
+                      <div class="card__titletext">
+                        "かりんとう饅頭"
+                      </div>
+                      <div class="card__overviewtext">
+                        <span>Friedbuns crispy dough with whipped cream</span><br>
+                        <span class="price">¥121</span>
+                      </div>
                     </div>
-                    <div class="card__overviewtext">
-                      <span>Hamburg steak with truffle flavored sauce</span><br>
-                      <span class="price">¥319</span>
+                  </a>
+                </div>
+                <div class="card">
+                  <a href="menu/menu5-4.html">
+                    <img src="https://west2-univ.jp/menu_img/png_sp/814897.png" alt>
+                    <div class="card__textbox">
+                      <div class="card__titletext">
+                        "ブルーベリーのタルト"
+                      </div>
+                      <div class="card__overviewtext">
+                        <span>Blue berry tart</span><br>
+                        <span class="price">¥77</span>
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </div>
-              <div class="card">
-                <a href="">
-                  <img src="https://west2-univ.jp/menu_img/png_sp/903047.png" alt>
-                  <div class="card__textbox">
-                    <div class="card__titletext">
-                      "チキンカツのピリッと柚子胡椒マヨ"
+                  </a>
+                </div>
+                <div class="card">
+                  <a href="menu/menu5-5.html">
+                    <img src="https://west2-univ.jp/menu_img/png_sp/904001.png" alt>
+                    <div class="card__textbox">
+                      <div class="card__titletext">
+                        "毎朝快調ヨーグルト"
+                      </div>
+                      <div class="card__overviewtext">
+                        <span>Yoghurt</span><br>
+                        <span class="price">¥66</span>
+                      </div>
                     </div>
-                    <div class="card__overviewtext">
-                      <span>Chicken cutlet with mayonnaise containing yuzu juice</span><br>
-                      <span class="price">¥275</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="card">
-                <a href="">
-                  <img src="https://west2-univ.jp/menu_img/png_sp/814274.png" alt>
-                  <div class="card__textbox">
-                    <div class="card__titletext">
-                      "ポークミンチカツ"
-                    </div>
-                    <div class="card__overviewtext">
-                      <span>Fried minced meat cutlet</span><br>
-                      <span class="price">¥275</span>
-                    </div>
-                  </div>
-                </a>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <script src="script/menu.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script/menu.js"></script>
+    <script src="script/accordion.js"></script>
 </body>
 
 </html>

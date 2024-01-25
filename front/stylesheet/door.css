@@ -1,0 +1,86 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+body{
+  z-index:-1;
+  position:relative;
+}
+
+.doors-wrap{
+  display:flex;
+  justify-content:space-around;
+  justify-items:center;
+  width:100%;
+  position:absolute;
+  top:120%;
+  padding-bottom:200px;
+}
+
+.enter{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  justify-items:center;
+}
+
+#buttonI,#buttonE{
+  background-image:url("../foto/wood.png");
+  font-size:30px;
+  border-radius:10px;
+  border:solid 1px #000;
+  color:#fff;
+  font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','ＭＳ 明朝', 'MS Mincho','ＭＳ Ｐ明朝','MS PMincho',sans-serif;
+  font-weight:bold;
+  transition: all 0.3s;
+}
+#buttonI:hover,#buttonE:hover{
+  background-color:#fff;
+  transform: scale(1.3, 1.3);
+}
+.exit{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  justify-items:center;
+}
+
+.doorO{
+  background-size:cover;
+  background-size:cover;
+  display:flex;
+  justify-content:center;
+  justify-items:center;
+  position:relative;
+  box-shadow:#fff 0px 50px 50px 10px;
+  margin-top:40px;
+}
+.doorE{
+  background-color:#fff;
+  background-size:cover;
+  display:flex;
+  justify-content:center;
+  justify-items:center;
+  position:relative;
+  box-shadow:#fff 0px 50px 50px 10px;
+  margin-top:40px;
+}
+.doorOB,.doorEB{
+  position:absolute;
+  top:-6%;
+  width:31vw;
+}
+.doorOL,.doorOR,.doorEL,.doorER {
+  z-index:1;
+  transition: 3s;
+  transform-origin: right;
+  transform:translate(0%,0%);
+  width:12vw;
+}
+.doorOL,.doorEL{
+  transform-origin:top left;
+}
+.doorOR,.doorER{
+  transform-origin:top right;
+}
